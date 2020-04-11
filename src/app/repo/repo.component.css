@@ -5,8 +5,8 @@
   }
   
   body {
-    /* background-color: #dddddd; */
-    background-image: url('/assets/images.jpg');
+    background-color: #dddddd;
+
   }
   
   .row {

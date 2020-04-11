@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ApiService } from '../api.service';
 @Component({
   selector: 'app-repo',
   templateUrl: './repo.component.html',
@@ -7,9 +7,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RepoComponent implements OnInit {
 
-  constructor() { }
+  user1;
+  repos;
+  userName: string;
 
-  ngOnInit(): void {
+  constructor(public apiservice: ApiService) {
+    this.apiservice.getUserDetails().subscribe(users => {
+      this.user1 = users;
+      console.log(this.user1);
+    });
+    this.apiservice.getRepos().subscribe(result => {
+      this.repos = result;
+      console.log(this.repos);
+    });
+  }
+
+  findUser() {
+    this.apiservice.updateUserName(this.userName);
+    this.apiservice.getUserDetails().subscribe(users => {
+      this.user1 = users;
+      console.log(this.user1);
+    });
+    this.apiservice.getRepos().subscribe(result => {
+      this.repos = result;
+      console.log(this.repos);
+    });
+  }
+
+  ngOnInit() {
+
   }
 
 }
