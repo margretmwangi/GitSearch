@@ -10,6 +10,8 @@ import { UserDataComponent } from './user-data/user-data.component';
 import { UserRepoListComponent } from './user-repo-list/user-repo-list.component';
 import { MasterComponent } from './master/master.component';
 import { RepoComponent } from './repo/repo.component';
+import { RoutingComponent } from './routing/routing.component';
+import { Routing } from './routing.module/routing.module.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { RepoComponent } from './repo/repo.component';
     UserDataComponent,
     UserRepoListComponent,
     MasterComponent,
-    RepoComponent
+    RepoComponent,
+    RoutingComponent,
+    Routing.ModuleComponent
   ],
   imports: [
     BrowserModule,
