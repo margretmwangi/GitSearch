@@ -9,6 +9,7 @@ import { SearchUserComponent } from './search-user/search-user.component';
 import { UserDataComponent } from './user-data/user-data.component';
 import { UserRepoListComponent } from './user-repo-list/user-repo-list.component';
 import { MasterComponent } from './master/master.component';
+import { RepoComponent } from './repo/repo.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MasterComponent } from './master/master.component';
     SearchUserComponent,
     UserDataComponent,
     UserRepoListComponent,
-    MasterComponent
+    MasterComponent,
+    RepoComponent
   ],
   imports: [
     BrowserModule,
