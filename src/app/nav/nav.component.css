@@ -1,6 +1,6 @@
 .nav-links{
-    position: relative;
-    right: -75%;
+    position: unset;
+     padding-left: -75%;
   }
   .nav-links li{
     font-weight: bolder;

@@ -19,4 +19,6 @@
   .btn{
     margin-left: 20px;
     margin-bottom: 20px;
+    border-radius: 0 20px 20px 0;
+  height: 46px
   }
